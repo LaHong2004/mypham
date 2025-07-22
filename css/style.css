@@ -1,0 +1,263 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;/*bỏ gạch chân của a*/
+    display: block; /*tạo khối*/
+    color: black;
+}
+ul,li{
+    list-style: none; /*bỏ dấu chấm của ul, li*/
+}
+:root{
+    --color1:#ea2883;
+}
+#waper{
+    width: 1200px;
+    margin: auto; /*căn giữa màn hình*/
+}
+/* đăng nhập, đăng ký */
+.nav_ul{
+    display: flex;/*dàn ngang các phần tử*/
+    justify-content: flex-end;
+}
+.nav_li{
+    margin: 8px;
+    font-size: 10px;
+}
+.nav_line{
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+.nav_li a:hover{ 
+    color: var(--color1); /*di chuyển qua thì đổi màu chữ*/
+}
+/* tìm kiếm */
+.search{
+    display: flex;
+    height: 40px;
+    margin: 5px 0px;
+}
+.logo{
+    flex: 2; /*chiếm 2 phần*/
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.txt_search{
+    flex: 3;
+    border: 1px solid var(--color1);
+    border-radius: 8px; /*bo tròn góc*/
+}
+.btn_search{
+    width: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 50%;
+    background-color: white;
+    margin: 0px 10px;
+}
+.btn_buy{
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    background-color: white;
+    margin: 0px 10px;
+    padding: 5px 40px;
+}
+.btn_buy:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.menu{
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.menu_ul{
+    display: flex;
+    justify-content: space-around; /*các phần tử cách nhau 1 khoảng*/
+}
+.menu_li{
+    flex: 1;/*chia đều các phần tử*/
+}
+.menu_li a{
+    line-height: 50px;/*chiều cao dòng chữ*/
+}
+.menu_li a:hover{
+    opacity: 50%;
+}
+/* slide, banner */
+.slidebar_banner{
+    display: flex;
+}
+.sidebar{
+    flex: 1;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.category,.title{
+    width: 300px;
+    text-transform: uppercase;/*chuyển sang chữ hoa*/
+    color: white;
+    background-color: var(--color1);
+    padding: 8px 15px;
+}
+._slide_li{
+    background-color: azure;
+    border-bottom: 1px solid gray;
+}
+._slide_li a{
+padding-left: 15px;
+ line-height: 2.5;
+ font-size: 18px;
+}
+.baner{
+    flex: 3;
+}
+.baner img{
+    width: 100%;
+    height: 100%;
+}
+/* thân */
+.title{
+    margin: 10px 0px;
+    text-transform:capitalize;
+}
+.product{
+    display: flex;
+}
+.list_product{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+.name{
+    margin: 10px;
+}
+.price{
+    margin: 10px;
+    color: green;
+}
+.buy{
+     border: 1px solid var(--color1);
+    background-color: white;
+    margin: 5px;
+    padding: 5px 40px;
+}
+.buy:hover{
+    color: white;
+    background-color: var(--color1);
+}
+.content2,.content3{
+    margin-top: 20px;
+}
+.new{
+    display: flex;
+}
+.list_new{
+   flex: 1;
+}
+.new_img img{
+ width: 100%;
+ height: 100%;
+}
+.new {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.new .new_item {
+    flex: 1;
+}
+
+.new .new_item img {
+    width: 100%;
+    height: 250px;
+}
+
+.new_img {
+    overflow: hidden;
+}
+
+.new_img img {
+    transition: all 0.5s;
+}
+
+.new_img:hover img {
+    transform: scale(1.2);
+}
+
+.new_item h5 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 10px 0px;
+    padding-right: 5px;
+}
+
+.date {
+    font-style: italic;
+}
+
+hr {
+    border-color: #dad6d6a8;
+}
+
+/*Phần footer*/
+
+#footer {
+    display: flex;
+    padding: 10px;
+}
+
+.footer1 {
+    flex: 1;
+    line-height: 1.7;
+    padding-right: 15px;
+}
+
+.footer1 a {
+    display: block;
+}
+
+.footer1 img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+
+/*Đăng nhập*/
+
+.btn-ct {
+    padding: 8px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mb10 {
+    margin: 10px 0;
+}
+
+.lb {
+    display: inline-block;
+    width: 150px;
+}
+
+.tmnd {
+    font-size: 24px;
+}
